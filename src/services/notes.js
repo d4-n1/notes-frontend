@@ -1,10 +1,10 @@
 import axios from 'axios';
-// const baseUrl =
-//   import.meta.env.MODE === 'development'
-//     ? 'http://localhost:3001/api/notes'
-//     : 'https://notes-backend-3vql.onrender.com/api/notes';
+const baseUrl =
+  import.meta.env.MODE === 'development'
+    ? 'http://localhost:3001/api/notes'
+    : 'https://notes-backend-3vql.onrender.com/api/notes';
 
-const baseUrl = 'https://notes-backend-3vql.onrender.com/api/notes';
+// const baseUrl = 'https://notes-backend-3vql.onrender.com/api/notes';
 
 const getAll = () => {
   const request = axios.get(baseUrl);
